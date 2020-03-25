@@ -21,9 +21,6 @@ header label:hover {
 }
 .logo {
 	position: absolute;
-	left: 10px;
-	width: 50px;
-	height: 50px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -40,10 +37,13 @@ header label:hover {
 	display: flex;
 	justify-content: flex-end;
 }
+.menu li {
+	text-align: center;
+}
 
 .menu li a {
 	display: block;
-	padding: 15px 20px;
+	padding: 50px 75px;
 	color: #464646;
 	text-decoration: none;
 	font-size: 0.91667rem;
@@ -90,7 +90,7 @@ header label:hover {
 	transition: 0.5s ease-in;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 	header label {
 		display: block;
 		float: right;
@@ -105,6 +105,15 @@ header label:hover {
 		width: 100%;
 		margin-left: -100%;
 		transition: all 0.5s;
+	}
+	.logo a img {
+		width: 112px;
+	}
+	.menu li {
+		text-align: left;
+	}
+	.menu li a {
+		padding: 15px 20px !important;
 	}
 	.menu ul {
 		flex-direction: column;
