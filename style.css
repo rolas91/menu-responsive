@@ -90,7 +90,61 @@ header label:hover {
 	transition: 0.5s ease-in;
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 1440px) {
+	.menu li a {
+		padding: 41px 70px !important;
+	}
+
+	.logo a img {
+		width: 45%;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.menu li a {
+		padding: 41px 53px !important;
+	}
+
+	.logo a img {
+		width: 45%;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	header label {
+		display: block;
+		float: right;
+		width: 100%;
+		text-align: right;
+		background: rgba(201, 201, 201, 0.3);
+	}
+	.menu {
+		position: absolute;
+		top: 50px;
+		background: rgba(201, 201, 201, 0.3);
+		width: 100%;
+		margin-left: -100%;
+		transition: all 0.5s;
+	}
+	.logo a img {
+		width: 112px;
+	}
+	.menu li {
+		text-align: left;
+	}
+	.menu li a {
+		padding: 15px 20px !important;
+	}
+	.menu ul {
+		flex-direction: column;
+	}
+
+	#btn-menu:checked ~ .menu {
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 640px) {
 	header label {
 		display: block;
 		float: right;
